@@ -1,0 +1,60 @@
+@import '../clearStyleAndColor.scss';
+@import '../auf.scss';
+
+
+body {
+    @extend %bodyMain
+}
+
+.container__form {
+    @include containerBasic(340px, 450px);
+}
+
+.login-form {
+    @include formStyle(1em,2em,10px) 
+}
+
+// .login-form{
+//     display: flex;
+//     flex-direction: column;
+//     padding: 1em;
+//     &:last-child {
+//         justify-content:end
+//     }
+//     &__name,
+//     &__buttons 
+//      {
+//         text-align: center;
+//     }
+//     &__login-input,
+//     &__password-input
+//     {
+//         display: flex;
+//         flex-direction: column;
+//         padding: 1em;
+//         margin-bottom: 2em;
+//         label {
+//             padding-bottom: 10px;
+//         }
+//         input{
+//             border: none;
+//             border-bottom: 0.2em solid white;
+//             background-color: $colorPastelPink; 
+//         }
+//         &__buttons{
+//             padding: 0 1em 0 1em;
+//         }
+      
+//     }
+
+    .login-form__submit {
+        @extend %formSubmit 
+    }
+
+    .link-registration {
+        color: white;
+    }
+    
+
+
+
