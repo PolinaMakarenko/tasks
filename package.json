@@ -48,6 +48,7 @@
     "error-ex": "^1.3.2",
     "escalade": "^3.1.1",
     "escape-string-regexp": "^1.0.5",
+    "express": "^4.18.2",
     "fill-range": "^7.0.1",
     "get-port": "^4.2.0",
     "globals": "^13.20.0",
@@ -115,9 +116,9 @@
     "xxhash-wasm": "^0.4.2"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "parcel --no-cache src/index.hbs",
-    "build": "parcel build index.html"
+    "dev": "parcel --no-cache src/index.html",
+    "build": "parcel build index.html",
+    "start": "parcel build src/index.html && node ./server.js"
   },
   "repository": {
     "type": "git",
